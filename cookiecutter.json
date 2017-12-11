@@ -2,5 +2,6 @@
   "app_name": "ingressoprovider",
   "provider_name": "ingresso",
   "provider_name_capitalized": "Ingresso",
-  "model_name": "IngressoEvent"
+  "model_name": "IngressoEvent",
+  "default_city": "LON"
 }
