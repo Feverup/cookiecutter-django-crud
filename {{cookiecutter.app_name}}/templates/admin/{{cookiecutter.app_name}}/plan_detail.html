@@ -1,0 +1,54 @@
+{% extends 'admin/base_site.html' %}
+
+{% load i18n %}
+{% load jet_tags %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block extrastyle %}
+<style type="text/css">
+.error {
+    color: red;
+}
+</style>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'providers:providers' %}">{% trans 'Providers' %}</a>
+    &rsaquo; <a href="{% url '{{ cookiecutter.provider_name }}provider:{{ cookiecutter.provider_name }}' %}">{% trans '{{ cookiecutter.provider_name_capitalized }}' %}</a>
+    &rsaquo; {{ object.name }}
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+<div id="changelist">
+    <div class="changelist-filter background-form">
+        <form action="." method="post">
+            {% csrf_token %}
+            <select id="city_code" name="city_code">
+                {% for city in view.cities %}
+                  {% if city.code == default_city_code %}
+                    <option value="{{ city.code }}" selected="selected">{{ city.name }}</option>
+                  {% else %}
+                    <option value="{{ city.code }}">{{ city.name }}</option>
+                  {% endif %}
+              {% endfor %}
+            </select>
+            <br />
+            {{ terms_form.as_p }}
+            <br />
+            <div class="changelist-filter-submit-block">
+                <input type="submit" value="{% trans 'Import plan and sessions to Fever' %}">
+            </div>
+        </form>
+    </div>
+
+
+
+</div>
+
+{% endblock %}
