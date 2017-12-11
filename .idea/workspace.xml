@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed96635-73ea-4c03-bf76-5097e325748e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/admin/{{cookiecutter.app_name}}/plan_detail.html" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/admin/{{cookiecutter.app_name}}/plan_detail.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="plan_detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/admin/{{cookiecutter.app_name}}/plan_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="138">
+              <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -29,6 +28,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ingresso</find>
+      <find>cookie</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,8 +223,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/admin/{{cookiecutter.app_name}}/plan_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="138">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="51" />
           <folding />
         </state>
       </provider>

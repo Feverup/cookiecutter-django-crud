@@ -17,7 +17,7 @@
 <div class="breadcrumbs">
     <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
     &rsaquo; <a href="{% url 'providers:providers' %}">{% trans 'Providers' %}</a>
-    &rsaquo; <a href="{% url '{{ cookiecutter.provider_name }}provider:{{ cookiecutter.provider_name }}' %}">{% trans '{{ cookiecutter.provider_name_capitalized }}' %}</a>
+    &rsaquo; <a href="{% url '{% endraw %}{{ cookiecutter.provider_name }}{% raw %}provider:{% endraw %}{{ cookiecutter.provider_name }}{% raw %}' %}">{% trans '{% endraw %}{{ cookiecutter.provider_name_capitalized }}{% raw %}' %}</a>
     &rsaquo; {{ object.name }}
 </div>
 {% endblock %}
