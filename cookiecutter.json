@@ -1,4 +1,6 @@
 {
-  "app_name": "things",
-  "model_name": "Thing"
+  "app_name": "ingressoprovider",
+  "provider_name": "ingresso",
+  "provider_name_capitalized": "Ingresso",
+  "model_name": "IngressoEvent"
 }
