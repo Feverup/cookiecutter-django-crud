@@ -1,30 +1,26 @@
-from django.core.urlresolvers import reverse_lazy
-from vanilla import ListView, CreateView, DetailView, UpdateView, DeleteView
-from .forms import {{ cookiecutter.model_name }}Form
-from .models import {{ cookiecutter.model_name }}
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, unicode_literals, print_function
+
+from providers.payments import BraintreePaymentMixin
+from providers.views import ProviderPurchaseView
+from .provider import {{cookiecutter.provider_name_capitalized}}Provider
 
 
-class {{ cookiecutter.model_name }}List(ListView):
-    model = {{ cookiecutter.model_name }}
-    paginate_by = 20
+class {{cookiecutter.provider_name_capitalized}}ProviderPurchaseView(
+    BraintreePaymentMixin,
+    ProviderPurchaseView
+):
+    provider = {{cookiecutter.provider_name_capitalized}}Provider
+
+    def __init__(self, *args, **kwargs):
+        super({{cookiecutter.provider_name_capitalized}}ProviderPurchaseView, self).__init__(self, *args,
+                                                           **kwargs)
+
+    def pre_book(self):
+        return self.provider.pre_booking_actions(self.current_user,
+                                                 self.session,
+                                                 num_tickets=self.ticket_number)
 
 
-class {{ cookiecutter.model_name }}Create(CreateView):
-    model = {{ cookiecutter.model_name }}
-    form_class = {{ cookiecutter.model_name }}Form
-    success_url = reverse_lazy('{{ cookiecutter.app_name }}:list')
-
-
-class {{ cookiecutter.model_name }}Detail(DetailView):
-    model = {{ cookiecutter.model_name }}
-
-
-class {{ cookiecutter.model_name }}Update(UpdateView):
-    model = {{ cookiecutter.model_name }}
-    form_class = {{ cookiecutter.model_name }}Form
-    success_url = reverse_lazy('{{ cookiecutter.app_name }}:list')
-
-
-class {{ cookiecutter.model_name }}Delete(DeleteView):
-    model = {{ cookiecutter.model_name }}
-    success_url = reverse_lazy('{{ cookiecutter.app_name }}:list')
+class {{cookiecutter.provider_name_capitalized}}IframeView(object):
+    pass

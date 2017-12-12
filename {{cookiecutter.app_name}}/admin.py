@@ -76,7 +76,7 @@ class PlanDetail({{cookiecutter.provider_name_capitalized}}GroupRequiredMixin, D
 
         context['default_city_code'] = {{cookiecutter.default_city}}
         context['terms_form'] = TemplateSessionTermsForm(
-            initial=settings.{{cookiecutter.provider_name_capitalized}}_API_DEFAULT_TERMS)
+            initial=settings.{{cookiecutter.provider_name|upper}}_API_DEFAULT_TERMS)
         return context
 
     @cached_property

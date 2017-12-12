@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""This command generates and stores Ingresso events from the ingresso client.
+"""This command generates and stores {{cookiecutter.provider_name_capitalized}} events from the {{cookiecutter.provider_name_capitalized}} client.
 """
 from __future__ import absolute_import, unicode_literals, print_function
 

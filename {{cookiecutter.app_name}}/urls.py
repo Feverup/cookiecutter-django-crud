@@ -1,11 +1,24 @@
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, unicode_literals, print_function
+
 from django.conf.urls import url
-from . import views
+from django.contrib import admin
+from django.core.urlresolvers import reverse_lazy
+from django.views.generic import RedirectView
+
+from . import admin as views
 
 
+# place app url patterns here
 urlpatterns = [
-    url(r'^$', views.{{ cookiecutter.model_name }}List.as_view(), name='list'),
-    url(r'^new/$', views.{{ cookiecutter.model_name }}Create.as_view(), name='create'),
-    url(r'^(?P<pk>\d+)/$', views.{{ cookiecutter.model_name }}Detail.as_view(), name='detail'),
-    url(r'^(?P<pk>\d+)/update/$', views.{{ cookiecutter.model_name }}Update.as_view(), name='update'),
-    url(r'^(?P<pk>\d+)/delete/$', views.{{ cookiecutter.model_name }}Delete.as_view(), name='delete'),
+    url(r'^admin/providers/{{cookiecutter.provider_name}}/$',
+        RedirectView.as_view(
+            url=reverse_lazy(
+                'admin:{{cookiecutter.app_name}}_{{cookiecutter.provider_name}}event_changelist'
+            )
+        ),
+        name='{{cookiecutter.provider_name}}'),
+    url(r'^admin/providers/{{cookiecutter.provider_name}}/plans/(?P<plan_id>\w+)/$',
+        admin.site.admin_view(views.PlanDetail.as_view()),
+        name='import-plans'),
 ]
