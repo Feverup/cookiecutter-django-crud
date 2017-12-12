@@ -4,9 +4,9 @@ Fill default terms as required
 ##################################################
 #                {{cookiecutter.provider_name|upper}}
 ##################################################
-{{cookiecutter.provider_name|upper}}_PARTNER_ID = {{ {{cookiecutter.provider_name}}.default_partner_id }}
-{{cookiecutter.provider_name|upper}}_CONTRACT_ID = '{{ {{cookiecutter.provider_name}}.default_contract_id }}'
-{{cookiecutter.provider_name|upper}}_API_SUGAR_CRM_ID = '{{ {{cookiecutter.provider_name}}.default_crm_partner_id }}'
+{{cookiecutter.provider_name|upper}}_PARTNER_ID = {% raw %}{{{% endraw %} {{cookiecutter.provider_name}}.default_partner_id {% raw %}}}{% endraw %}
+{{cookiecutter.provider_name|upper}}_CONTRACT_ID = '{% raw %}{{{% endraw %} {{cookiecutter.provider_name}}.default_contract_id {% raw %}}}{% endraw %}'
+{{cookiecutter.provider_name|upper}}_API_SUGAR_CRM_ID = '{% raw %}{{{% endraw %} {{cookiecutter.provider_name}}.default_crm_partner_id {% raw %}}}{% endraw %}'
 {{cookiecutter.provider_name|upper}}_API_DEFAULT_TERMS = {
     'commission_rsvp_fee': None,
     'commission_paid_percentage': 20,
@@ -20,7 +20,7 @@ Settings to paste on settings.py
 ##################################################
 #                {{cookiecutter.provider_name|upper}}
 ##################################################
-{{cookiecutter.provider_name|upper}}_PARTNER_ID = 1234
+{{cookiecutter.provider_name|upper}}_PARTNER_ID = NumericPartnerIdGoesHere
 {{cookiecutter.provider_name|upper}}_CONTRACT_ID = 'put crm contract id here'
 {{cookiecutter.provider_name|upper}}_API_SUGAR_CRM_ID = 'put crm partner id here'
 {{cookiecutter.provider_name|upper}}_API_DEFAULT_TERMS = {
@@ -35,5 +35,16 @@ Block for defaults main.yml file
 
 ingresso:
     default_partner_id: 1234
-    default_contract_id: contractidfromcrm
-    default_crm_partner_id: partneridfromcrm
+    default_contract_id: ContractIdFromCrmGoesHere
+    default_crm_partner_id: PartnerIdFromCrmGoesHere
+
+Items to add in core/models/plan.py
+
+    - In the List of Plan Providers block:
+        PROVIDER_{{cookiecutter.provider_name|upper}} = '{{cookiecutter.provider_name}}'
+
+    - In the PLAN_PROVIDER_CHOICES tuple of tuples:
+        (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}')
+
+    - In the PLAN_THIRD_PARTY_PROVIDERS tuple of tuples:
+        (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}')
