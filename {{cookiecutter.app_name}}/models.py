@@ -135,9 +135,9 @@ class {{cookiecutter.model_name}}(models.Model):
                 )
             else:
                 raw_data = api.post(
-                    '/Accounts/{% raw % }{{% endraw %}{{cookiecutter.provider_name}}{% raw % }_sugar_id}{% endraw %}/link/accounts_fever_venue'
-                    '_addressses_2/{% raw % }{place_sugar_id}{% endraw % }'.format(
-                        {{cookiecutter.provider_name}}_sugar_id=settings.{{cookiecutter.provider_name|upper}}_API_SUGAR_CRM_ID,
+                    '/Accounts/{provider_sugar_id}/link/accounts_fever_venue'
+                    '_addressses_2/{place_sugar_id}{'.format(
+                        provider_sugar_id=settings.{{cookiecutter.provider_name|upper}}_API_SUGAR_CRM_ID,
                         place_sugar_id=place_sugar_id
                     ),
                 )
