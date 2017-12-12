@@ -14,7 +14,7 @@ class {{cookiecutter.provider_name_capitalized}}Serializer(object):
     """Serializer from {{cookiecutter.provider_name}} events to our models """
 
     @staticmethod
-    def from_{{cookiecutter.provider_name}}_client_event({{cookiecutter.provider_name_}}_client_event,
+    def from_{{cookiecutter.provider_name}}_client_event({{cookiecutter.provider_name}}_client_event,
         existing_{{cookiecutter.provider_name}}_event=None, **kwargs):
         """Converts an event from the {{cookiecutter.provider_name}} client into a {{cookiecutter.model_name}} instance
         It does NOT save the generated event on the DB.

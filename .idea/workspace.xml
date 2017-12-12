@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed96635-73ea-4c03-bf76-5097e325748e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,14 +25,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
+            <state relative-caret-position="185">
+              <caret line="129" column="27" lean-forward="true" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
               <folding>
                 <element signature="e#24#96#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="85" lean-forward="false" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,6 +74,7 @@
       <find>ingresso</find>
       <find>{{{</find>
       <find>raw</find>
+      <find>provider_name_}</find>
     </findStrings>
     <replaceStrings>
       <replace>{{cookiecutter.provider_name_capitalized}}</replace>
@@ -86,13 +97,13 @@
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/services.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" />
       </list>
     </option>
   </component>
@@ -280,16 +291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1019">
@@ -366,11 +367,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
+        <state relative-caret-position="185">
+          <caret line="129" column="27" lean-forward="true" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
           <folding>
             <element signature="e#24#96#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="85" lean-forward="false" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
