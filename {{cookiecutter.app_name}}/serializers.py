@@ -27,6 +27,7 @@ class {{cookiecutter.provider_name_capitalized}}Serializer(object):
         """
 
         {{cookiecutter.provider_name}}_event = existing_{{cookiecutter.provider_name}}_event or {{cookiecutter.model_name}}()
+        # TODO set event values from client values here
         {{cookiecutter.provider_name}}_event.can_sell = True
 
         return {{cookiecutter.provider_name_capitalized}}_event

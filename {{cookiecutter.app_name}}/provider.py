@@ -12,9 +12,6 @@ class {{cookiecutter.provider_name_capitalized}}Provider(AbstractProvider):
         super({{cookiecutter.provider_name_capitalized}}Provider, self).__init__(*args, **kwargs)
 
         self.service = {{cookiecutter.provider_name_capitalized}}Service()
-        self.reservation = None
-        self.reservation_id = None
-        self.status = None
 
     def available_tickets(self, plan):
         return self.service.get_available_tickets(plan)
