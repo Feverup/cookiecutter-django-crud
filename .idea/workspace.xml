@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed96635-73ea-4c03-bf76-5097e325748e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/apps.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,36 +13,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1684">
-              <caret line="46" column="58" lean-forward="false" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-              <folding>
-                <element signature="e#26#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CHECKME" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="430">
+              <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-              <folding>
-                <element signature="e#24#96#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -391,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="430">
+          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
           <folding />
         </state>
       </provider>

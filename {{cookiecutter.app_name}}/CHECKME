@@ -64,6 +64,11 @@ Items to add in core/models/plan.py
     - In the PLAN_THIRD_PARTY_PROVIDERS tuple of tuples:
         (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}')
 
+
+REMEMBER, AFTER THIS CHANGES, YOU NEED TO INCREASE THE MINOR ON THE META main.yml FOR FEVER2!!
+AND ALWAYS BUILD THE ROLE IMMEDIATELY AFTER, OR SOMEONE MIGHT TAKE THE SAME VERSION
+FOR TESTING IN VAGRANT, YOU CAN JUST GO TO THE ROOT FOLDER AND PERFORM A 'make settings' CALL
+
 Ask Fernando Perez to add the specific provider queue to celery, named '{{cookiecutter.provider_name}}'
 
 Once everything is done, remove this file from the generated app as cleanup.
