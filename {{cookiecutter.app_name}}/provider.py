@@ -1,4 +1,3 @@
-from api.exceptions import BadRequest
 from core.models.invitation import Ticket
 from {{cookiecutter.app_name}}.services import {{cookiecutter.provider_name_capitalized}}Service
 from {{cookiecutter.app_name}}.tasks import update_available_tickets_for_session

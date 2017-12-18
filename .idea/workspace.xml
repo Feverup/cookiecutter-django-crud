@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed96635-73ea-4c03-bf76-5097e325748e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/apps.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py" afterPath="$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,21 +25,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1684">
+              <caret line="46" column="58" lean-forward="false" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+              <folding>
+                <element signature="e#26#98#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CHECKME" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+            <state relative-caret-position="668">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filters.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py">
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="55" />
+            <state relative-caret-position="577">
+              <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
               <folding>
                 <element signature="e#24#96#0" expanded="true" />
               </folding>
@@ -60,6 +83,7 @@
       <find>reservation</find>
       <find>ingresso</find>
       <find>settings.</find>
+      <find>purchaseview</find>
     </findStrings>
     <replaceStrings>
       <replace>{{cookiecutter.provider_name_capitalized}}</replace>
@@ -75,22 +99,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/admin/{{cookiecutter.app_name}}/plan_detail.html" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py" />
         <option value="$PROJECT_DIR$/cookiecutter.json" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/apps.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/services.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" />
-        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME.html" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/apps.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py" />
+        <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py" />
         <option value="$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME" />
       </list>
     </option>
@@ -116,8 +140,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,6 +156,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,8 +197,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2521322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25479743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -206,7 +231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -214,23 +238,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/base.html" />
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -238,7 +253,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/admin/{{cookiecutter.app_name}}/plan_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#179#251#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -252,17 +283,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#26#98#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="e#26#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/services.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="255">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="e#24#96#0" expanded="true" />
@@ -270,100 +331,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py">
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="56" column="4" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="34" />
+        <state relative-caret-position="498">
+          <caret line="76" column="39" lean-forward="true" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
           <folding>
-            <element signature="e#24#96#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/templates/admin/{{cookiecutter.app_name}}/plan_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="129" column="27" lean-forward="true" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
-          <folding>
-            <element signature="e#24#96#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#24#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="78" column="27" lean-forward="false" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/management/commands/get_{{cookiecutter.provider_name}}_events.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/provider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#26#98#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="629">
+          <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+          <folding>
+            <element signature="e#26#98#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/filters.py">
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="55" />
+        <state relative-caret-position="-1684">
+          <caret line="46" column="58" lean-forward="false" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+          <folding>
+            <element signature="e#26#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
           <folding>
             <element signature="e#24#96#0" expanded="true" />
           </folding>
@@ -372,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/{{cookiecutter.app_name}}/CHECKME">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+        <state relative-caret-position="668">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>

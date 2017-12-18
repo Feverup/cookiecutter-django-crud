@@ -15,6 +15,14 @@ Fill default terms as required
     'kind_of_payment': 'pay_total_purchases',
 }
 
+On the PROVIDERS_PURCHASE_VIEW list add:
+    '{{cookiecutter.provider_name}}': '{{cookiecutter.app_name}}.views.{{cookiecutter.provider_name_capitalized}}ProviderPurchaseView',
+On the ACTIVE_PROVIDERS list add:
+    '{{cookiecutter.provider_name}}': '{{cookiecutter.app_name}}.provider.{{cookiecutter.provider_name_capitalized}}Provider',
+On INSTALLED_APPS add:
+    '{{cookiecutter.app_name}}',
+
+
 Settings to paste on settings.py
 
 ##################################################
@@ -31,9 +39,16 @@ Settings to paste on settings.py
     'kind_of_payment': 'pay_total_purchases',
 }
 
+On the PROVIDERS_PURCHASE_VIEW list add:
+    '{{cookiecutter.provider_name}}': '{{cookiecutter.app_name}}.views.{{cookiecutter.provider_name_capitalized}}ProviderPurchaseView',
+On the ACTIVE_PROVIDERS list add:
+    '{{cookiecutter.provider_name}}': '{{cookiecutter.app_name}}.provider.{{cookiecutter.provider_name_capitalized}}Provider',
+On INSTALLED_APPS add:
+    '{{cookiecutter.app_name}}',
+
 Block for defaults main.yml file
 
-ingresso:
+{{cookiecutter.provider_name}}:
     default_partner_id: 1234
     default_contract_id: ContractIdFromCrmGoesHere
     default_crm_partner_id: PartnerIdFromCrmGoesHere
@@ -48,3 +63,7 @@ Items to add in core/models/plan.py
 
     - In the PLAN_THIRD_PARTY_PROVIDERS tuple of tuples:
         (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}')
+
+Ask Fernando Perez to add the specific provider queue to celery, named '{{cookiecutter.provider_name}}'
+
+Once everything is done, remove this file from the generated app as cleanup.

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+
+
 from __future__ import absolute_import, unicode_literals, print_function
 
 import datetime
@@ -19,7 +21,9 @@ logger = getLogger(__name__)
 
 
 class {{cookiecutter.model_name}}(models.Model):
-    """Specialization Class to be used in MainPlan.provider_extra"""
+    """
+    Specialization Class to be used in MainPlan.provider_extra.
+    """
 
     class Meta:
         app_label = "{{cookiecutter.app_name}}"
@@ -38,8 +42,10 @@ class {{cookiecutter.model_name}}(models.Model):
     can_sell = models.BooleanField(default=True)
 
     def import_plan(self, city, partner):
-        """Creates and stores a Fever MainPlan from the {{cookiecutter.provider_name_capitalized}} event
-        data associated to the specified city and partner"""
+        """
+        Creates and stores a Fever MainPlan from the {{cookiecutter.provider_name_capitalized}} event
+        data associated to the specified city and partner.
+        """
 
         main_plan = MainPlan.objects.create(
             provider_extra=self,

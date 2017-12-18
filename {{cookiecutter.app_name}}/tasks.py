@@ -13,7 +13,7 @@ from {{cookiecutter.app_name}}.services import {{cookiecutter.provider_name_capi
 logger = logging.getLogger(__name__)
 
 
-@task(queue="default")
+@task(queue="{{cookiecutter.provider_name}}")
 def update_available_tickets_for_session(session_id):
     """
     Update number of available tickets for a session
@@ -25,7 +25,7 @@ def update_available_tickets_for_session(session_id):
     return False
 
 
-@task(queue="default")
+@task(queue="{{cookiecutter.provider_name}}")
 def import_sessions_for_plan(main_plan_id):
     """
     Update number of available tickets for a session
@@ -37,7 +37,7 @@ def import_sessions_for_plan(main_plan_id):
     return False
 
 
-@task(queue="default")
+@task(queue="{{cookiecutter.provider_name}}")
 def import_new_sessions_for_existing_plans():
     """
     Updates existing plans with new sessions if available, and updates availability for existing sessions
@@ -48,7 +48,7 @@ def import_new_sessions_for_existing_plans():
     for main_plan in main_plans:
         service.update_sessions(main_plan)
 
-@task(queue="default")
+@task(queue="{{cookiecutter.provider_name}}")
 def check_{{cookiecutter.provider_name}}_plans_sellable_status():
     """
     Checks {{cookiecutter.provider_name}} plans to see if they have at least one sellable session
