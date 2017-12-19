@@ -59,10 +59,10 @@ Items to add in core/models/plan.py
         PROVIDER_{{cookiecutter.provider_name|upper}} = '{{cookiecutter.provider_name}}'
 
     - In the PLAN_PROVIDER_CHOICES tuple of tuples:
-        (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}')
+        (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}'),
 
     - In the PLAN_THIRD_PARTY_PROVIDERS tuple of tuples:
-        (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}')
+        (PROVIDER_{{cookiecutter.provider_name|upper}}, '{{cookiecutter.provider_name_capitalized}}'),
 
 
 REMEMBER, AFTER THIS CHANGES, YOU NEED TO INCREASE THE MINOR ON THE META main.yml FOR FEVER2!!
