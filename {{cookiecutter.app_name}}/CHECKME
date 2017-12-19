@@ -72,3 +72,8 @@ FOR TESTING IN VAGRANT, YOU CAN JUST GO TO THE ROOT FOLDER AND PERFORM A 'make s
 Ask Fernando Perez to add the specific provider queue to celery, named '{{cookiecutter.provider_name}}'
 
 Once everything is done, remove this file from the generated app as cleanup.
+
+Validation:
+- Run make settings on the root folder of the project to apply the provider settings
+- Generate migrations and apply them to get your new model into the database
+- Do a sanity check on backoffice to see that your provider appears on the providers list, and clicking on it takes you to the empty changelist for your model
